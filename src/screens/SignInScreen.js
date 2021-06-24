@@ -20,7 +20,7 @@ export const SignInScreen = () => {
   return (
     <View style={tailwind("flex-1 ")}>
         <Image
-        style={tailwind('w-full h-1/3')}
+        style={tailwind('w-full h-1/4')}
          source={require('../images/image.jpeg')} />
          <Text style={tailwind('text-black text-2xl self-center mt-3')}>Save The World</Text>
          <Text style={tailwind('self-center mx-8 text-gray-400 mt-4 text-center')}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </Text>
