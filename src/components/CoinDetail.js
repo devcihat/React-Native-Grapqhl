@@ -1,15 +1,22 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 
+
 export const CoinDetail = (props) => {
-  const { navigation } = props;
-  const { state } = navigation;
-  const { params } = state;
+  // console.log('sadasdasd',props)
+  const { navigation, route } = props;
+  const { params } = route;
+  //console.log("parammss",params)
   const { coin } = params;
   const { CoinInfo, DISPLAY } = coin;
   const { FullName, Name } = CoinInfo;
   const { USD } = DISPLAY;
   const { PRICE, OPENDAY, HIGHDAY, LOWDAY, OPEN24HOUR } = USD;
+
+
+  // useEffect(() => {
+  //   console.log("satatew", props);
+  // }, []);
 
   return (
     <View style={styles.container}>
@@ -50,6 +57,9 @@ export const CoinDetail = (props) => {
           <View style={styles.statRow}>
             <Text style={styles.stat} numberOfLines={1}>
               Open in 24 hours
+            </Text>
+            <Text style={styles.stat} numberOfLines={1}>
+              {OPEN24HOUR}
             </Text>
             <Text style={styles.stat} numberOfLines={1}>
               {OPEN24HOUR}

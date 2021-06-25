@@ -11,10 +11,15 @@ import { AuthContext } from "./src/utils";
 //graphql
 import { client } from "./src/graphql/client";
 import { ApolloProvider } from "@apollo/react-hooks";
+import { LogBox } from 'react-native';
 
 const Stack = createStackNavigator();
 
 export default function App({ navigation }) {
+
+
+  LogBox.ignoreLogs(['Remote debugger']);
+
   const [state, dispatch] = useReducer(
     (prevState, action) => {
       switch (action.type) {

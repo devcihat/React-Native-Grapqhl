@@ -19,9 +19,11 @@
     "apollo-link-rest": "^0.8.0-beta.0",
     "expo": "~41.0.1",
     "expo-status-bar": "~1.0.4",
+    "gatsby-react-lightweight-charts": "^1.2.4",
     "graphql": "^15.5.1",
     "graphql-anywhere": "^4.2.7",
     "graphql-tag": "^2.12.4",
+    "lightweight-charts": "^3.3.0",
     "qs": "^6.10.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -34,7 +36,10 @@
     "react-native-screens": "~3.0.0",
     "react-native-vector-icons": "^8.1.0",
     "react-native-web": "~0.13.12",
+    "react-native-webview": "11.2.3",
     "react-navigation-stack": "^2.10.4",
+    "react-tradingview-widget": "^1.3.2",
+    "react-tradingview-widgets": "^1.0.1",
     "tailwind-rn": "^3.0.1"
   },
   "devDependencies": {
